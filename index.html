@@ -1,1 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Spider Flashcards</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- FUNDO / TEIAS -->
+
+    <div class="teia teia-esquerda"></div>
+    <div class="teia teia-direita"></div>
+
+
+    <!-- TELA DE ENTRADA -->
+
+    <section id="entrada" class="entrada">
+
+        <div class="aranha-entrada">
+            🕷️
+        </div>
+
+        <h1>SPIDER<br>FLASHCARDS</h1>
+
+        <p>
+            Teste seus conhecimentos
+            sobre o Homem-Aranha.
+        </p>
+
+        <button id="iniciar">
+            COMEÇAR
+        </button>
+
+    </section>
+
+
+    <!-- ÁREA DOS FLASHCARDS -->
+
+    <main id="flashcards" class="flashcards escondido">
+
+        <header class="titulo">
+
+            <h1>
+                SPIDER <span>FLASHCARDS</span>
+            </h1>
+
+            <p>
+                Teste seus conhecimentos!
+            </p>
+
+        </header>
+
+
+        <!-- ARANHA QUE VAI DESCER -->
+
+        <div id="aranhaAnimada" class="aranha-animada">
+            🕷️
+        </div>
+
+
+        <!-- FLASHCARD -->
+
+        <div class="area-card">
+
+            <div id="card" class="card">
+
+                <!-- FRENTE -->
+
+                <div class="face frente">
+
+                    <div class="numero">
+                        PERGUNTA <span id="numeroPergunta">1</span>/5
+                    </div>
+
+                    <div class="simbolo">
+                        🕷️
+                    </div>
+
+                    <h2 id="pergunta">
+                        Pergunta
+                    </h2>
+
+                    <p class="instrucao">
+                        Clique em GIRAR para descobrir a resposta.
+                    </p>
+
+                </div>
+
+
+                <!-- VERSO -->
+
+                <div class="face verso">
+
+                    <div class="numero">
+                        RESPOSTA <span id="numeroResposta">1</span>/5
+                    </div>
+
+                    <div class="simbolo">
+                        🕸️
+                    </div>
+
+                    <p id="resposta">
+                        Resposta
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- CONTROLES -->
+
+        <div class="controles">
+
+            <button id="voltar" class="botao secundario">
+                ↩ VOLTAR
+            </button>
+
+            <button id="girar" class="botao girar">
+                🔄 GIRAR
+            </button>
+
+            <button id="proximo" class="botao principal">
+                PRÓXIMO →
+            </button>
+
+        </div>
+
+
+        <!-- CONTADOR -->
+
+        <div class="contador">
+            <span id="contador">1</span> de 5
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
 
